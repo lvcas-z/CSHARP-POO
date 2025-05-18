@@ -36,6 +36,12 @@ namespace Ej1
             return "Hola soy..." + nombre;
         }
 
+        // Sobrecarga metodo
+        public string saludar(string nombrePersona)
+        {
+            return "Hola " + nombrePersona + ", soy..." + this.nombre;
+        }
+
 
     }
 }

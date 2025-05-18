@@ -23,6 +23,7 @@ namespace Ej1
             p1.setEdad(20);
             Console.WriteLine(p1.saludar());
             Console.WriteLine("La edad de la persona es:" + p1.getEdad());
+            Console.WriteLine(p1.saludar("messi"));
 
 
             // PROPIEDADES DE C#
