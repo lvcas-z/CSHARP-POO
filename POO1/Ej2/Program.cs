@@ -20,9 +20,6 @@ namespace Ej2
             ///Cod cliente (1 a 100)
             ///EL LOTE CORTA CON COD CLIENTE 0
 
-
-
-
             Articulo[] articulos = new Articulo[10];
             articulos[6].CodigoMarca = 3;
 

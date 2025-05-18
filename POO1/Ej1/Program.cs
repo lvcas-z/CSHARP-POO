@@ -25,7 +25,7 @@ namespace Ej1
 
 
             // PROPIEDADES DE C#
-            Botella b1 = new Botella();
+            Botella b1 = new Botella("Azul","Vidrio");
             b1.Capacidad = 200;
 
             int capacidadDeB1 = b1.Capacidad;
