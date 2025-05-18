@@ -8,11 +8,17 @@ namespace Ej1
 {
     internal class Botella
     {
+
+        /// capacidad maxima:100
+        /// cantidadActual = 0
+        /// metodo de recarga: carga al 100 y devuelve el costo de recargar. 50 cada 100
         /// Constructor Botella
         public Botella(string color, string material)
         {
             this.color = color;
             this.material = material;
+            capacidad = 100;
+            cantidadActual = 0;
         }
         
         /// Sobrecargar el constructor
@@ -22,20 +28,34 @@ namespace Ej1
         private int capacidad;
         private string color;
         private string material;
+        private int cantidadActual;
+
+        public int Capacidad
+        {
+            get { return capacidad; }
+        }
+
+        public int CantidadActual
+        {
+            get { return cantidadActual; }
+        }
 
         public string Material {
             get { return this.material; } 
         }
 
-
-        //Propiedad
-
-        public int Capacidad
+        public float recargar()
         {
-            get { return capacidad; }
-            set { capacidad = value; }
+            if (cantidadActual > 0)
+            {
+                int dif = 100 - cantidadActual;
+                float monto = dif * 50 / 100 ;
+                cantidadActual += dif;
+                return monto;
+            }
+            cantidadActual = 100;
+            return 50;
         }
-
 
 
     }

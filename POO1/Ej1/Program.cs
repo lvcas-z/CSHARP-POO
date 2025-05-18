@@ -19,18 +19,20 @@ namespace Ej1
             string[] nombres = new string[10];
 
             ///GETTERS - SETTERS
-            Persona p1 = new Persona();
+            Persona p1 = new Persona("Pepe");
             p1.setEdad(20);
+            Console.WriteLine(p1.saludar());
             Console.WriteLine("La edad de la persona es:" + p1.getEdad());
 
 
             // PROPIEDADES DE C#
             Botella b1 = new Botella("Azul","Vidrio");
-            b1.Capacidad = 200;
 
-            int capacidadDeB1 = b1.Capacidad;
-            Console.WriteLine("La capacidad de la botella es:" + capacidadDeB1);
             Console.WriteLine("La capacidad de la botella es:" + b1.Capacidad);
+            Console.WriteLine("La cantidad actual es :" + b1.CantidadActual);
+            b1.recargar();
+            Console.WriteLine("Luego de recargar la cantidad actual es :" + b1.CantidadActual);
+
 
 
         }

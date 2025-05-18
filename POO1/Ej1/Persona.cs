@@ -14,6 +14,12 @@ namespace Ej1
         private float sueldo;
         private string nombre;
 
+        public Persona(string nombre)
+        {
+            this.nombre = nombre;
+        }
+
+        //Getters - Setters
         public void setEdad (int e)
         {
             edad = e;
@@ -23,7 +29,12 @@ namespace Ej1
             return edad;    
         }
 
-        // Mod de visibilidad 
+        // Metodos
+
+        public string saludar()
+        {
+            return "Hola soy..." + nombre;
+        }
 
 
     }
