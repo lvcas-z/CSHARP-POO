@@ -13,6 +13,14 @@ namespace ConsoleApp1
         {
 
             // Persona > Lider > Developer > Tester
+
+            Persona persona = new Persona();
+            Developer d1 = new Developer();
+            Lider l1 = new Lider();
+
+            l1.Apellido = "Messi";
+            l1.Nombre = "Lionel";
+            l1.NroLegajo = 10;
         }
     }
 }
