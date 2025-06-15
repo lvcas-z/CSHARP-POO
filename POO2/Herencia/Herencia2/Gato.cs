@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Herencia2
 {
-    internal class Gato
+    internal class Gato : AnimalDomestico
     {
+        public override string Comunicarse()
+        {
+            return "Miauu miau ";
+        }
     }
 }

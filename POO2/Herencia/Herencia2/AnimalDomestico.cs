@@ -8,5 +8,13 @@ namespace Herencia2
 {
     internal class AnimalDomestico : Animal
     {
+        public string Nombre { get; set; }
+
+        public override string ToString()
+        {
+            return "Animal Domestico : " + Nombre;
+        }
+
+
     }
 }

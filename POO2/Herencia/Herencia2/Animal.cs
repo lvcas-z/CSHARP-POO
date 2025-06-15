@@ -8,5 +8,10 @@ namespace Herencia2
 {
     internal class Animal
     {
+
+        public virtual string Comunicarse()
+        {
+            return "ruido.....";
+        }
     }
 }

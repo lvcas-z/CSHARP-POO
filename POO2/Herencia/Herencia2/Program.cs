@@ -10,7 +10,32 @@ namespace Herencia2
     {
         static void Main(string[] args)
         {
-            Animal a1 = new Animal();
+            AnimalDomestico a1 = new AnimalDomestico();
+            a1.Nombre = "Pepe";
+
+            Console.WriteLine(a1.ToString());
+
+            Gato g1 = new Gato();
+            g1.Nombre = "Leoncito";
+            Console.WriteLine(g1.ToString());
+            Console.WriteLine(g1.Comunicarse());
+
+
+            List<Animal> listaAnimales = new List<Animal>();
+            listaAnimales.Add(a1);
+            listaAnimales.Add(g1 );
+            listaAnimales.Add(new Pez());
+
+            /// Poliformismo aplicado porque cada obj tiene se def
+
+            foreach(Animal a in listaAnimales)
+            {
+                Console.WriteLine(a.Comunicarse());
+            }
+
+            Console.ReadKey();
+
+
         }
     }
 }
