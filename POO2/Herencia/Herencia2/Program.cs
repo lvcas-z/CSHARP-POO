@@ -27,6 +27,18 @@ namespace Herencia2
             listaAnimales.Add(new Pez());
 
             /// Poliformismo aplicado porque cada obj tiene se def
+            /// 
+
+
+            /// no se puede crear instancia de una interfaz por ende no se crea como flyable f1 = etc etc
+           
+
+            List<Flyable> listaVoladores = new List<Flyable>();
+
+            listaVoladores.Add(new Canario());
+            listaVoladores.Add(new Aguila());
+
+
 
             foreach(Animal a in listaAnimales)
             {

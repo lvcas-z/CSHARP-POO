@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Herencia2
 {
-    internal class Aguila : AnimalSalvaje, Flyable
+    internal interface Flyable
     {
-        public string volar()
-        {
-            return "vuela como aguila...";
-        }
+        //metodo
+        string volar();
+
     }
 }
