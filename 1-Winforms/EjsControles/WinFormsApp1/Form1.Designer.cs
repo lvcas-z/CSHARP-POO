@@ -36,12 +36,13 @@
             dtpFechaNacimiento = new DateTimePicker();
             ckbChocolate = new CheckBox();
             groupBox1 = new GroupBox();
-            lblPerfil = new Label();
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
             radioButton3 = new RadioButton();
+            radioButton2 = new RadioButton();
+            radioButton1 = new RadioButton();
+            lblPerfil = new Label();
             comboBox1 = new ComboBox();
             numericUpDown1 = new NumericUpDown();
+            btnPerfil = new Button();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
@@ -123,26 +124,16 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "groupBox1";
             // 
-            // lblPerfil
+            // radioButton3
             // 
-            lblPerfil.AutoSize = true;
-            lblPerfil.Font = new Font("Segoe UI", 20F);
-            lblPerfil.Location = new Point(600, 57);
-            lblPerfil.Name = "lblPerfil";
-            lblPerfil.Size = new Size(76, 37);
-            lblPerfil.TabIndex = 11;
-            lblPerfil.Text = "Perfil";
-            // 
-            // radioButton1
-            // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(43, 23);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(94, 19);
-            radioButton1.TabIndex = 0;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "radioButton1";
-            radioButton1.UseVisualStyleBackColor = true;
+            radioButton3.AutoSize = true;
+            radioButton3.Location = new Point(338, 22);
+            radioButton3.Name = "radioButton3";
+            radioButton3.Size = new Size(94, 19);
+            radioButton3.TabIndex = 12;
+            radioButton3.TabStop = true;
+            radioButton3.Text = "radioButton3";
+            radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
@@ -155,37 +146,57 @@
             radioButton2.Text = "radioButton2";
             radioButton2.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // radioButton1
             // 
-            radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(338, 22);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(94, 19);
-            radioButton3.TabIndex = 12;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "radioButton3";
-            radioButton3.UseVisualStyleBackColor = true;
+            radioButton1.AutoSize = true;
+            radioButton1.Location = new Point(43, 23);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(94, 19);
+            radioButton1.TabIndex = 0;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "radioButton1";
+            radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // lblPerfil
+            // 
+            lblPerfil.AutoSize = true;
+            lblPerfil.Font = new Font("Segoe UI", 20F);
+            lblPerfil.Location = new Point(600, 57);
+            lblPerfil.Name = "lblPerfil";
+            lblPerfil.Size = new Size(76, 37);
+            lblPerfil.TabIndex = 11;
+            lblPerfil.Text = "Perfil";
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(128, 236);
+            comboBox1.Location = new Point(121, 236);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(121, 23);
             comboBox1.TabIndex = 12;
             // 
             // numericUpDown1
             // 
-            numericUpDown1.Location = new Point(371, 237);
+            numericUpDown1.Location = new Point(286, 236);
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(120, 23);
             numericUpDown1.TabIndex = 13;
+            // 
+            // btnPerfil
+            // 
+            btnPerfil.Location = new Point(493, 236);
+            btnPerfil.Name = "btnPerfil";
+            btnPerfil.Size = new Size(75, 23);
+            btnPerfil.TabIndex = 14;
+            btnPerfil.Text = "Ver Perfil";
+            btnPerfil.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnPerfil);
             Controls.Add(numericUpDown1);
             Controls.Add(comboBox1);
             Controls.Add(lblPerfil);
@@ -221,5 +232,6 @@
         private RadioButton radioButton1;
         private ComboBox comboBox1;
         private NumericUpDown numericUpDown1;
+        private Button btnPerfil;
     }
 }
