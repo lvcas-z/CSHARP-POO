@@ -35,21 +35,23 @@
             lblFecha = new Label();
             dtpFechaNacimiento = new DateTimePicker();
             ckbChocolate = new CheckBox();
-            groupBox1 = new GroupBox();
-            radioButton3 = new RadioButton();
-            radioButton2 = new RadioButton();
-            radioButton1 = new RadioButton();
+            gbGenero = new GroupBox();
+            radioSinGenero = new RadioButton();
+            radioFemenino = new RadioButton();
+            radioMasculino = new RadioButton();
             lblPerfil = new Label();
-            comboBox1 = new ComboBox();
-            numericUpDown1 = new NumericUpDown();
+            cBoxColor = new ComboBox();
+            numUpDown = new NumericUpDown();
             btnPerfil = new Button();
-            groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            lblColor = new Label();
+            lblNumero = new Label();
+            gbGenero.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)numUpDown).BeginInit();
             SuspendLayout();
             // 
             // lwElementos
             // 
-            lwElementos.Location = new Point(104, 288);
+            lwElementos.Location = new Point(106, 430);
             lwElementos.Name = "lwElementos";
             lwElementos.Size = new Size(546, 141);
             lwElementos.TabIndex = 2;
@@ -59,7 +61,7 @@
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(656, 406);
+            btnAgregar.Location = new Point(658, 548);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(75, 23);
             btnAgregar.TabIndex = 3;
@@ -69,16 +71,16 @@
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(138, 34);
+            txtNombre.Location = new Point(184, 74);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(100, 23);
+            txtNombre.Size = new Size(249, 23);
             txtNombre.TabIndex = 4;
             txtNombre.TextChanged += txtNombre_TextChanged_1;
             // 
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(69, 37);
+            lblNombre.Location = new Point(115, 77);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(54, 15);
             lblNombre.TabIndex = 5;
@@ -88,7 +90,7 @@
             // lblFecha
             // 
             lblFecha.AutoSize = true;
-            lblFecha.Location = new Point(69, 79);
+            lblFecha.Location = new Point(115, 119);
             lblFecha.Name = "lblFecha";
             lblFecha.Size = new Size(41, 15);
             lblFecha.TabIndex = 6;
@@ -97,7 +99,7 @@
             // 
             // dtpFechaNacimiento
             // 
-            dtpFechaNacimiento.Location = new Point(138, 73);
+            dtpFechaNacimiento.Location = new Point(184, 113);
             dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             dtpFechaNacimiento.Size = new Size(200, 23);
             dtpFechaNacimiento.TabIndex = 7;
@@ -105,102 +107,123 @@
             // ckbChocolate
             // 
             ckbChocolate.AutoSize = true;
-            ckbChocolate.Location = new Point(138, 117);
+            ckbChocolate.Location = new Point(184, 157);
             ckbChocolate.Name = "ckbChocolate";
             ckbChocolate.Size = new Size(141, 19);
             ckbChocolate.TabIndex = 9;
             ckbChocolate.Text = "Te gusta el chocolate?";
             ckbChocolate.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // gbGenero
             // 
-            groupBox1.Controls.Add(radioButton3);
-            groupBox1.Controls.Add(radioButton2);
-            groupBox1.Controls.Add(radioButton1);
-            groupBox1.Location = new Point(78, 157);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(487, 53);
-            groupBox1.TabIndex = 10;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
+            gbGenero.Controls.Add(radioSinGenero);
+            gbGenero.Controls.Add(radioFemenino);
+            gbGenero.Controls.Add(radioMasculino);
+            gbGenero.Location = new Point(124, 197);
+            gbGenero.Name = "gbGenero";
+            gbGenero.Size = new Size(487, 53);
+            gbGenero.TabIndex = 10;
+            gbGenero.TabStop = false;
+            gbGenero.Text = "Genero:";
             // 
-            // radioButton3
+            // radioSinGenero
             // 
-            radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(338, 22);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(94, 19);
-            radioButton3.TabIndex = 12;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "radioButton3";
-            radioButton3.UseVisualStyleBackColor = true;
+            radioSinGenero.AutoSize = true;
+            radioSinGenero.Location = new Point(338, 22);
+            radioSinGenero.Name = "radioSinGenero";
+            radioSinGenero.Size = new Size(82, 19);
+            radioSinGenero.TabIndex = 12;
+            radioSinGenero.TabStop = true;
+            radioSinGenero.Text = "Sin Genero";
+            radioSinGenero.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radioFemenino
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(185, 22);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(94, 19);
-            radioButton2.TabIndex = 12;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "radioButton2";
-            radioButton2.UseVisualStyleBackColor = true;
+            radioFemenino.AutoSize = true;
+            radioFemenino.Location = new Point(185, 22);
+            radioFemenino.Name = "radioFemenino";
+            radioFemenino.Size = new Size(78, 19);
+            radioFemenino.TabIndex = 12;
+            radioFemenino.TabStop = true;
+            radioFemenino.Text = "Femenino";
+            radioFemenino.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // radioMasculino
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(43, 23);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(94, 19);
-            radioButton1.TabIndex = 0;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "radioButton1";
-            radioButton1.UseVisualStyleBackColor = true;
+            radioMasculino.AutoSize = true;
+            radioMasculino.Location = new Point(43, 23);
+            radioMasculino.Name = "radioMasculino";
+            radioMasculino.Size = new Size(80, 19);
+            radioMasculino.TabIndex = 0;
+            radioMasculino.TabStop = true;
+            radioMasculino.Text = "Masculino";
+            radioMasculino.UseVisualStyleBackColor = true;
             // 
             // lblPerfil
             // 
             lblPerfil.AutoSize = true;
             lblPerfil.Font = new Font("Segoe UI", 20F);
-            lblPerfil.Location = new Point(600, 57);
+            lblPerfil.Location = new Point(113, 9);
             lblPerfil.Name = "lblPerfil";
-            lblPerfil.Size = new Size(76, 37);
+            lblPerfil.Size = new Size(146, 37);
             lblPerfil.TabIndex = 11;
-            lblPerfil.Text = "Perfil";
+            lblPerfil.Text = "Crear Perfil";
             // 
-            // comboBox1
+            // cBoxColor
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(121, 236);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 12;
+            cBoxColor.FormattingEnabled = true;
+            cBoxColor.Location = new Point(196, 280);
+            cBoxColor.Name = "cBoxColor";
+            cBoxColor.Size = new Size(137, 23);
+            cBoxColor.TabIndex = 12;
             // 
-            // numericUpDown1
+            // numUpDown
             // 
-            numericUpDown1.Location = new Point(286, 236);
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(120, 23);
-            numericUpDown1.TabIndex = 13;
+            numUpDown.Location = new Point(492, 280);
+            numUpDown.Name = "numUpDown";
+            numUpDown.Size = new Size(96, 23);
+            numUpDown.TabIndex = 13;
             // 
             // btnPerfil
             // 
-            btnPerfil.Location = new Point(493, 236);
+            btnPerfil.Location = new Point(701, 101);
             btnPerfil.Name = "btnPerfil";
-            btnPerfil.Size = new Size(75, 23);
+            btnPerfil.Size = new Size(113, 51);
             btnPerfil.TabIndex = 14;
             btnPerfil.Text = "Ver Perfil";
             btnPerfil.UseVisualStyleBackColor = true;
+            btnPerfil.Click += btnPerfil_Click;
+            // 
+            // lblColor
+            // 
+            lblColor.AutoSize = true;
+            lblColor.Location = new Point(123, 284);
+            lblColor.Name = "lblColor";
+            lblColor.Size = new Size(67, 15);
+            lblColor.TabIndex = 15;
+            lblColor.Text = "Elige Color:";
+            // 
+            // lblNumero
+            // 
+            lblNumero.AutoSize = true;
+            lblNumero.Location = new Point(374, 284);
+            lblNumero.Name = "lblNumero";
+            lblNumero.Size = new Size(103, 15);
+            lblNumero.TabIndex = 16;
+            lblNumero.Text = "Elige Numero Fav:";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(911, 612);
+            Controls.Add(lblNumero);
+            Controls.Add(lblColor);
             Controls.Add(btnPerfil);
-            Controls.Add(numericUpDown1);
-            Controls.Add(comboBox1);
+            Controls.Add(numUpDown);
+            Controls.Add(cBoxColor);
             Controls.Add(lblPerfil);
-            Controls.Add(groupBox1);
+            Controls.Add(gbGenero);
             Controls.Add(ckbChocolate);
             Controls.Add(dtpFechaNacimiento);
             Controls.Add(lblFecha);
@@ -210,9 +233,10 @@
             Controls.Add(lwElementos);
             Name = "Form1";
             Text = "Form1";
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            Load += Form1_Load;
+            gbGenero.ResumeLayout(false);
+            gbGenero.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)numUpDown).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -225,13 +249,15 @@
         private Label lblFecha;
         private DateTimePicker dtpFechaNacimiento;
         private CheckBox ckbChocolate;
-        private GroupBox groupBox1;
+        private GroupBox gbGenero;
         private Label lblPerfil;
-        private RadioButton radioButton3;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
-        private ComboBox comboBox1;
-        private NumericUpDown numericUpDown1;
+        private RadioButton radioSinGenero;
+        private RadioButton radioFemenino;
+        private RadioButton radioMasculino;
+        private ComboBox cBoxColor;
+        private NumericUpDown numUpDown;
         private Button btnPerfil;
+        private Label lblColor;
+        private Label lblNumero;
     }
 }
