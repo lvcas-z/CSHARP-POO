@@ -57,7 +57,7 @@ namespace WinFormsApp1
             string colorFav = cBoxColor.SelectedItem.ToString();
             string numeroSeleccionado = numUpDown.Value.ToString();
 
-            string msj = "Nombre" + nombre + ", Fecha de nacimiento :" + fecha + ", Le gusta el chocolate?: " + chocolate + ", Genero:" + radioRes + ", Color Fav:"+ colorFav + ",  Numero seleccionado: " + numeroSeleccionado;
+            string msj = "Nombre" + nombre + ", Fecha de nacimiento :" + fecha + ", Le gusta el chocolate?: " + chocolate + ", Genero:" + radioRes + ", Color Fav:" + colorFav + ",  Numero seleccionado: " + numeroSeleccionado;
             MessageBox.Show(msj);
         }
 
@@ -67,6 +67,11 @@ namespace WinFormsApp1
             cBoxColor.Items.Add("Rojo");
             cBoxColor.Items.Add("Amarillo");
             cBoxColor.Items.Add("Verde");
+        }
+
+        private void cBoxColor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

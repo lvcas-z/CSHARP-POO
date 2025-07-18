@@ -54,7 +54,7 @@
             lwElementos.Location = new Point(106, 430);
             lwElementos.Name = "lwElementos";
             lwElementos.Size = new Size(546, 141);
-            lwElementos.TabIndex = 2;
+            lwElementos.TabIndex = 10;
             lwElementos.UseCompatibleStateImageBehavior = false;
             lwElementos.View = View.List;
             lwElementos.SelectedIndexChanged += lwElementos_SelectedIndexChanged;
@@ -64,7 +64,7 @@
             btnAgregar.Location = new Point(658, 548);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(75, 23);
-            btnAgregar.TabIndex = 3;
+            btnAgregar.TabIndex = 8;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
             btnAgregar.Click += btnAgregar_Click_1;
@@ -74,7 +74,7 @@
             txtNombre.Location = new Point(184, 74);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(249, 23);
-            txtNombre.TabIndex = 4;
+            txtNombre.TabIndex = 1;
             txtNombre.TextChanged += txtNombre_TextChanged_1;
             // 
             // lblNombre
@@ -83,7 +83,7 @@
             lblNombre.Location = new Point(115, 77);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(54, 15);
-            lblNombre.TabIndex = 5;
+            lblNombre.TabIndex = 1;
             lblNombre.Text = "Nombre:";
             lblNombre.Click += label1_Click;
             // 
@@ -93,7 +93,7 @@
             lblFecha.Location = new Point(115, 119);
             lblFecha.Name = "lblFecha";
             lblFecha.Size = new Size(41, 15);
-            lblFecha.TabIndex = 6;
+            lblFecha.TabIndex = 3;
             lblFecha.Text = "Fecha:";
             lblFecha.Click += label1_Click_1;
             // 
@@ -102,7 +102,7 @@
             dtpFechaNacimiento.Location = new Point(184, 113);
             dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             dtpFechaNacimiento.Size = new Size(200, 23);
-            dtpFechaNacimiento.TabIndex = 7;
+            dtpFechaNacimiento.TabIndex = 2;
             // 
             // ckbChocolate
             // 
@@ -110,7 +110,7 @@
             ckbChocolate.Location = new Point(184, 157);
             ckbChocolate.Name = "ckbChocolate";
             ckbChocolate.Size = new Size(141, 19);
-            ckbChocolate.TabIndex = 9;
+            ckbChocolate.TabIndex = 3;
             ckbChocolate.Text = "Te gusta el chocolate?";
             ckbChocolate.UseVisualStyleBackColor = true;
             // 
@@ -122,7 +122,7 @@
             gbGenero.Location = new Point(124, 197);
             gbGenero.Name = "gbGenero";
             gbGenero.Size = new Size(487, 53);
-            gbGenero.TabIndex = 10;
+            gbGenero.TabIndex = 4;
             gbGenero.TabStop = false;
             gbGenero.Text = "Genero:";
             // 
@@ -132,7 +132,7 @@
             radioSinGenero.Location = new Point(338, 22);
             radioSinGenero.Name = "radioSinGenero";
             radioSinGenero.Size = new Size(82, 19);
-            radioSinGenero.TabIndex = 12;
+            radioSinGenero.TabIndex = 2;
             radioSinGenero.TabStop = true;
             radioSinGenero.Text = "Sin Genero";
             radioSinGenero.UseVisualStyleBackColor = true;
@@ -143,7 +143,7 @@
             radioFemenino.Location = new Point(185, 22);
             radioFemenino.Name = "radioFemenino";
             radioFemenino.Size = new Size(78, 19);
-            radioFemenino.TabIndex = 12;
+            radioFemenino.TabIndex = 1;
             radioFemenino.TabStop = true;
             radioFemenino.Text = "Femenino";
             radioFemenino.UseVisualStyleBackColor = true;
@@ -166,7 +166,7 @@
             lblPerfil.Location = new Point(113, 9);
             lblPerfil.Name = "lblPerfil";
             lblPerfil.Size = new Size(146, 37);
-            lblPerfil.TabIndex = 11;
+            lblPerfil.TabIndex = 0;
             lblPerfil.Text = "Crear Perfil";
             // 
             // cBoxColor
@@ -175,23 +175,26 @@
             cBoxColor.Location = new Point(196, 280);
             cBoxColor.Name = "cBoxColor";
             cBoxColor.Size = new Size(137, 23);
-            cBoxColor.TabIndex = 12;
+            cBoxColor.TabIndex = 5;
+            cBoxColor.SelectedIndexChanged += cBoxColor_SelectedIndexChanged;
             // 
             // numUpDown
             // 
             numUpDown.Location = new Point(492, 280);
             numUpDown.Name = "numUpDown";
             numUpDown.Size = new Size(96, 23);
-            numUpDown.TabIndex = 13;
+            numUpDown.TabIndex = 6;
             // 
             // btnPerfil
             // 
+            btnPerfil.BackColor = Color.Navy;
+            btnPerfil.ForeColor = SystemColors.ControlLightLight;
             btnPerfil.Location = new Point(701, 101);
             btnPerfil.Name = "btnPerfil";
             btnPerfil.Size = new Size(113, 51);
-            btnPerfil.TabIndex = 14;
+            btnPerfil.TabIndex = 7;
             btnPerfil.Text = "Ver Perfil";
-            btnPerfil.UseVisualStyleBackColor = true;
+            btnPerfil.UseVisualStyleBackColor = false;
             btnPerfil.Click += btnPerfil_Click;
             // 
             // lblColor
@@ -200,7 +203,7 @@
             lblColor.Location = new Point(123, 284);
             lblColor.Name = "lblColor";
             lblColor.Size = new Size(67, 15);
-            lblColor.TabIndex = 15;
+            lblColor.TabIndex = 9;
             lblColor.Text = "Elige Color:";
             // 
             // lblNumero
@@ -209,7 +212,7 @@
             lblNumero.Location = new Point(374, 284);
             lblNumero.Name = "lblNumero";
             lblNumero.Size = new Size(103, 15);
-            lblNumero.TabIndex = 16;
+            lblNumero.TabIndex = 9;
             lblNumero.Text = "Elige Numero Fav:";
             // 
             // Form1
