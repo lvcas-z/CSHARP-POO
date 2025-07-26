@@ -19,11 +19,20 @@ namespace WinFormsApp1
 
         private void perfilPersonaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            /// navegacion
-            /// 
+            ///EVITAR REPETICION DE VENTANAS
 
-            Form1 ventana= new Form1();
-            ventana.ShowDialog();
+            foreach (var item in Application.OpenForms) {
+                if (item.GetType() == typeof(Form1))
+                {
+                    return;
+                }
+            }
+
+
+            /// navegacion
+            Form1 ventana = new Form1();
+            ventana.MdiParent = this; /// instancio ventana , hago referencia a esta con this, es padre
+            ventana.Show();
 
 
         }

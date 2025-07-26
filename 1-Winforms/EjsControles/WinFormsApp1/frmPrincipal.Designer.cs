@@ -151,6 +151,7 @@
             Controls.Add(statusStrip1);
             Controls.Add(toolStrip1);
             Controls.Add(menuStrip1);
+            IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
             Name = "frmPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
